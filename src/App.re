@@ -1,4 +1,4 @@
-// Create a Styled functor
+// Create a Styled functor, this should be in a lib
 
 module type ElementT = {
   let tag: string
@@ -15,8 +15,10 @@ let concat = styles => {
 module Styled = (Element: ElementT) => {
   let className = concat(Element.styles);
   [@react.component]
-  let make = () => {
-    React.createElement(ReactDOM.stringToComponent(Element.tag), ReactDOM.domProps(~className, ()))
+  let make = (~children=React.null) => {
+    let component = ReactDOM.stringToComponent(Element.tag);
+    let props = ReactDOM.domProps(~className, ());
+    React.createElementVariadic(component, props, [|children|])
   }
 };
 
@@ -32,7 +34,10 @@ module App = {
   [@react.component]
   let make = () =>
     <div>
-      <Stack />
+      <Stack>
+        <p> {React.string("Hello")} </p>
+        <p> {React.string("World")} </p>
+      </Stack>
     </div>
 };
 
