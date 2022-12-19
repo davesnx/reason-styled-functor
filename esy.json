@@ -1,0 +1,31 @@
+{
+  "name": "melange-project",
+  "dependencies": {
+    "ocaml": "4.14.0",
+    "@opam/dune": ">= 3.5.0",
+    "@opam/reason": "*",
+    "@opam/melange": "*",
+    "@opam/mel": "*"
+  },
+  "devDependencies": {
+    "@opam/dot-merlin-reader": "*",
+    "@opam/ocaml-lsp-server": ">= 1.12.0"
+  },
+  "esy": {
+    "buildsInSource": "unsafe",
+    "build": [
+      "rm -rf node_modules/melange",
+      "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
+      "mel build"
+    ],
+    "buildEnv": {
+      "MELANGELIB": "#{@opam/melange.lib / 'melange'}"
+    }
+  },
+  "scripts": {
+    "build:watch": "mel build -w"
+  },
+  "installConfig": {
+    "pnp": false
+  }
+}
