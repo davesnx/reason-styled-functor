@@ -104,7 +104,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/topkg@opam:1.0.7@7ee47d76",
-        "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/ocamlbuild@opam:0.14.2@c6163b28",
         "@opam/cmdliner@opam:1.1.1@03763729",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -129,7 +129,7 @@
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/ocamlbuild@opam:0.14.2@c6163b28",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
@@ -284,7 +284,7 @@
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/result@opam:1.5@1c6a6533",
         "@opam/ppx_derivers@opam:1.2.1@e2cbad12",
-        "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/merlin-extend@opam:0.6.1@7d979feb",
         "@opam/menhir@opam:20220210@ff5ea9a7",
         "@opam/fix@opam:20220121@17b9a1a4", "@opam/dune@opam:3.7.0@95218dc4",
@@ -479,20 +479,20 @@
         "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.7.0@95218dc4"
       ]
     },
-    "@opam/ocamlformat-rpc-lib@opam:0.24.1@4b5db4b3": {
-      "id": "@opam/ocamlformat-rpc-lib@opam:0.24.1@4b5db4b3",
+    "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e": {
+      "id": "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e",
       "name": "@opam/ocamlformat-rpc-lib",
-      "version": "opam:0.24.1",
+      "version": "opam:0.25.1",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/02/023425e9818f80ea50537b2371a4a766c149a9957d05807e88a004d2d5f441ce#sha256:023425e9818f80ea50537b2371a4a766c149a9957d05807e88a004d2d5f441ce",
-          "archive:https://github.com/ocaml-ppx/ocamlformat/releases/download/0.24.1/ocamlformat-0.24.1.tbz#sha256:023425e9818f80ea50537b2371a4a766c149a9957d05807e88a004d2d5f441ce"
+          "archive:https://opam.ocaml.org/cache/sha256/dc/dc8f2a330ca3930b36cacb2623bb360ed8bdf6e4a8acd293dbd9e2241a6fd33d#sha256:dc8f2a330ca3930b36cacb2623bb360ed8bdf6e4a8acd293dbd9e2241a6fd33d",
+          "archive:https://github.com/ocaml-ppx/ocamlformat/releases/download/0.25.1/ocamlformat-0.25.1.tbz#sha256:dc8f2a330ca3930b36cacb2623bb360ed8bdf6e4a8acd293dbd9e2241a6fd33d"
         ],
         "opam": {
           "name": "ocamlformat-rpc-lib",
-          "version": "0.24.1",
-          "path": "esy.lock/opam/ocamlformat-rpc-lib.0.24.1"
+          "version": "0.25.1",
+          "path": "esy.lock/opam/ocamlformat-rpc-lib.0.25.1"
         }
       },
       "overrides": [],
@@ -505,26 +505,26 @@
         "@opam/csexp@opam:1.5.1@8a8fb3a7"
       ]
     },
-    "@opam/ocamlfind@opam:1.9.5@c23112ba": {
-      "id": "@opam/ocamlfind@opam:1.9.5@c23112ba",
+    "@opam/ocamlfind@opam:1.9.6@d090a512": {
+      "id": "@opam/ocamlfind@opam:1.9.6@d090a512",
       "name": "@opam/ocamlfind",
-      "version": "opam:1.9.5",
+      "version": "opam:1.9.6",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/8b/8b893525ce36cb3d4d4952483bcc7cf4#md5:8b893525ce36cb3d4d4952483bcc7cf4",
-          "archive:http://download.camlcity.org/download/findlib-1.9.5.tar.gz#md5:8b893525ce36cb3d4d4952483bcc7cf4"
+          "archive:https://opam.ocaml.org/cache/md5/96/96c6ee50a32cca9ca277321262dbec57#md5:96c6ee50a32cca9ca277321262dbec57",
+          "archive:http://download.camlcity.org/download/findlib-1.9.6.tar.gz#md5:96c6ee50a32cca9ca277321262dbec57"
         ],
         "opam": {
           "name": "ocamlfind",
-          "version": "1.9.5",
-          "path": "esy.lock/opam/ocamlfind.1.9.5"
+          "version": "1.9.6",
+          "path": "esy.lock/opam/ocamlfind.1.9.6"
         }
       },
       "overrides": [
         {
           "opamoverride":
-            "esy.lock/overrides/opam__s__ocamlfind_opam__c__1.9.5_opam_override"
+            "esy.lock/overrides/opam__s__ocamlfind_opam__c__1.9.6_opam_override"
         }
       ],
       "dependencies": [
@@ -636,7 +636,7 @@
         "@opam/pp@opam:1.1.2@89ad03b5", "@opam/ordering@opam:3.6.2@37bc3093",
         "@opam/omd@opam:1.3.2@511d53d2",
         "@opam/octavius@opam:1.2.2@2205cc65",
-        "@opam/ocamlformat-rpc-lib@opam:0.24.1@4b5db4b3",
+        "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e",
         "@opam/ocamlc-loc@opam:3.6.2@edc950a7",
         "@opam/fiber@opam:3.6.2@349136be", "@opam/dyn@opam:3.6.2@38120dfc",
         "@opam/dune-rpc@opam:3.6.2@d874b9d2",
@@ -654,7 +654,7 @@
         "@opam/pp@opam:1.1.2@89ad03b5", "@opam/ordering@opam:3.6.2@37bc3093",
         "@opam/omd@opam:1.3.2@511d53d2",
         "@opam/octavius@opam:1.2.2@2205cc65",
-        "@opam/ocamlformat-rpc-lib@opam:0.24.1@4b5db4b3",
+        "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e",
         "@opam/ocamlc-loc@opam:3.6.2@edc950a7",
         "@opam/fiber@opam:3.6.2@349136be", "@opam/dyn@opam:3.6.2@38120dfc",
         "@opam/dune-rpc@opam:3.6.2@d874b9d2",
@@ -1127,13 +1127,13 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/yojson@opam:2.0.2@eb65f292",
-        "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/dune@opam:3.7.0@95218dc4", "@opam/csexp@opam:1.5.1@8a8fb3a7",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/yojson@opam:2.0.2@eb65f292",
-        "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/dune@opam:3.7.0@95218dc4", "@opam/csexp@opam:1.5.1@8a8fb3a7"
       ]
     },
@@ -1160,7 +1160,7 @@
         }
       ],
       "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@opam/integers@opam:0.7.0@a0bd70b4",
         "@opam/bigarray-compat@opam:1.1.0@84cda9d0",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -1368,11 +1368,11 @@
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c23112ba",
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.6@d090a512",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c23112ba"
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.6@d090a512"
       ]
     },
     "@opam/base-bigarray@opam:base@b03491b0": {
